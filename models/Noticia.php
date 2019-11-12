@@ -43,10 +43,19 @@ class Noticia extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'head' => 'Head',
-            'body' => 'Body',
+            'title' => 'Título',
+            'head' => 'Cabeça',
+            'body' => 'Corpo',
             'STATUS' => 'Status',
+        ];
+    }
+
+    public function fields()
+    {
+        return [
+            'id',
+            'title',
+            'status' => 'STATUS',
         ];
     }
 }
