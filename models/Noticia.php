@@ -55,6 +55,8 @@ class Noticia extends \yii\db\ActiveRecord
         return [
             'id',
             'title',
+            'head',
+            'body',
             'status' => 'STATUS',
         ];
     }
